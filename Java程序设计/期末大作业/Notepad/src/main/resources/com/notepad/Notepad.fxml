@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.notepad.NotepadController">
+   <children>
+      <MenuBar fx:id="menuBar" layoutY="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu fx:id="file" mnemonicParsing="false" text="文件">
+            <items>
+                  <MenuItem fx:id="create" mnemonicParsing="false" onAction="#initialize" onMenuValidation="#initialize" text="新建" />
+                <MenuItem fx:id="open" mnemonicParsing="false" text="打开" />
+                  <MenuItem fx:id="save" mnemonicParsing="false" text="保存" />
+                  <MenuItem fx:id="saveAs" mnemonicParsing="false" text="另存为" />
+                  <MenuItem fx:id="exit" mnemonicParsing="false" text="退出" />
+            </items>
+          </Menu>
+          <Menu fx:id="edit" mnemonicParsing="false" text="编辑">
+            <items>
+              <MenuItem fx:id="undo" mnemonicParsing="false" text="撤销" />
+                  <MenuItem fx:id="cut" mnemonicParsing="false" text="剪切" />
+                  <MenuItem fx:id="copy" mnemonicParsing="false" text="复制" />
+                  <MenuItem fx:id="paste" mnemonicParsing="false" text="粘贴" />
+                  <MenuItem fx:id="delete" mnemonicParsing="false" text="删除" />
+                  <MenuItem fx:id="search" mnemonicParsing="false" text="查找" />
+                  <MenuItem fx:id="search_last" mnemonicParsing="false" text="查找上一个" />
+                  <MenuItem fx:id="search_next" mnemonicParsing="false" text="查找下一个" />
+                  <MenuItem fx:id="replace" mnemonicParsing="false" text="替换" />
+                  <MenuItem fx:id="select_all" mnemonicParsing="false" text="全选" />
+            </items>
+          </Menu>
+          <Menu fx:id="format" mnemonicParsing="false" text="格式">
+            <items>
+              <MenuItem fx:id="font" mnemonicParsing="false" text="字体" />
+                  <RadioMenuItem fx:id="status" mnemonicParsing="false" text="状态栏" />
+                  <RadioMenuItem fx:id="autoEnd" mnemonicParsing="false" text="自动换行" />
+            </items>
+          </Menu>
+            <Menu fx:id="help" mnemonicParsing="false" text="帮助">
+                <items>
+                    <MenuItem fx:id="about" mnemonicParsing="false" text="关于记事本" />
+                </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0" />
+      <Label fx:id="label" text="无标题" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="2.0" />
+      <Label fx:id="info" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>

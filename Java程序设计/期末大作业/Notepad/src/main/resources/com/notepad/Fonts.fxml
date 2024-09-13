@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.notepad.FontsController">
+    <children>
+        <Label text="字体" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="0.0" />
+        <Label text="字形" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="0.0" />
+        <Label text="字号" AnchorPane.leftAnchor="480.0" AnchorPane.topAnchor="0.0" />
+        <TextArea fx:id="fontDisplay" prefHeight="5.0" prefWidth="150.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="450.0" AnchorPane.topAnchor="20.0" />
+        <TextArea fx:id="shapeDisplay" layoutX="50.0" layoutY="30.0" prefHeight="5.0" prefWidth="150.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="20.0" />
+        <TextArea fx:id="sizeDisplay" layoutX="250.0" layoutY="30.0" prefHeight="5.0" prefWidth="150.0" AnchorPane.leftAnchor="440.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="20.0" />
+        <TextArea fx:id="display" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="290.0" />
+        <Button fx:id="confirm" mnemonicParsing="false" text="确定" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="280.0" />
+        <Button fx:id="cancel" mnemonicParsing="false" text="取消" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="340.0" />
+        <Label text="示例" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="270.0" />
+        <ComboBox fx:id="fontBox" prefWidth="150.0" promptText="字体选择" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="60.0" />
+        <ComboBox fx:id="shapeBox" prefWidth="150.0" promptText="字形选择" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="60.0" />
+        <ComboBox fx:id="sizeBox" prefWidth="150.0" promptText="字号选择" AnchorPane.leftAnchor="420.0" AnchorPane.topAnchor="60.0" />
+        <ColorPicker fx:id="colorPicker" layoutX="245.0" layoutY="100.0" AnchorPane.leftAnchor="245.0" AnchorPane.topAnchor="100.0" />
+    </children>
+</AnchorPane>

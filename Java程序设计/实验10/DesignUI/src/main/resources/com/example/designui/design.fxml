@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+
+<VBox alignment="CENTER" prefHeight="469.0" prefWidth="665.0" spacing="20.0" style="-fx-background-color: #e1e4cb;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.designui.DesignUIController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <HBox prefHeight="100.0" prefWidth="200.0" spacing="10">
+        <VBox prefHeight="102.0" prefWidth="122.0">
+            <RadioButton mnemonicParsing="false" selected="true" stylesheets="@style.css" text="High" toggleGroup="$SizeGroup">
+                <toggleGroup>
+                    <ToggleGroup fx:id="SizeGroup" />
+                </toggleGroup>
+                <VBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </VBox.margin>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" stylesheets="@style.css" text="Medium" toggleGroup="$SizeGroup">
+                <VBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </VBox.margin>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" stylesheets="@style.css" text="Low" toggleGroup="$SizeGroup">
+                <VBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </VBox.margin>
+            </RadioButton>
+        </VBox>
+        <VBox prefHeight="102.0" prefWidth="161.0">
+            <TextField text="Your Name">
+                <VBox.margin>
+                    <Insets bottom="5.0" top="10.0" />
+                </VBox.margin>
+            </TextField>
+            <TextField text="Your Password">
+                <VBox.margin>
+                    <Insets bottom="5.0" top="10.0" />
+                </VBox.margin>
+            </TextField>
+        </VBox>
+        <VBox prefHeight="102.0" prefWidth="165.0">
+            <ChoiceBox fx:id="LanguageSelector" prefWidth="150.0" style="-fx-background-color: #798332;" value="English">
+                <VBox.margin>
+                    <Insets left="10.0" top="60.0" />
+                </VBox.margin>
+            </ChoiceBox>
+        </VBox>
+    </HBox>
+    <HBox prefHeight="34.0" prefWidth="1514.0" spacing="10">
+        <Button mnemonicParsing="false" style="-fx-background-color: #808a39;" text="Accept" />
+        <Button mnemonicParsing="false" style="-fx-background-color: #808a39;" text="Decline" />
+        <Label style="-fx-border-style: dashed;" text="Not Available" />
+    </HBox>
+    <HBox prefHeight="32.0" prefWidth="1514.0" spacing="10">
+        <CheckBox mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" stylesheets="@style.css" text="Normal" />
+        <CheckBox mnemonicParsing="false" prefHeight="25.0" prefWidth="161.0" selected="true" stylesheets="@style.css" text="Checked" />
+        <CheckBox indeterminate="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" stylesheets="@style.css" text="Undefined" />
+    </HBox>
+    <HBox prefHeight="34.0" prefWidth="1514.0" spacing="10">
+        <Label prefHeight="32.0" prefWidth="92.0" style="-fx-border-style: dashed;" text="Progress:" />
+        <Slider stylesheets="@style.css" />
+        <VBox prefHeight="200.0" prefWidth="100.0">
+            <Circle fill="#8a9442" radius="18.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Label text="0%" />
+        </VBox>
+    </HBox>
+</VBox>

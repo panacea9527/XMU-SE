@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="256.0" prefWidth="430.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="com.example.test.EmployeeController">
+    <children>
+        <ListView fx:id="employeeListView" layoutX="14.0" layoutY="9.0" prefHeight="200.0" prefWidth="150.0" />
+        <Label layoutX="170.0" layoutY="17.0" text="ID：" />
+        <Label layoutX="170.0" layoutY="65.0" text="姓名：" />
+        <Label layoutX="170.0" layoutY="117.0" text="部门：" />
+        <Label layoutX="165.0" layoutY="164.0" text="岗位级别：" />
+        <TextField fx:id="idField" layoutX="230.0" layoutY="13.0" prefWidth="200.0" />
+        <TextField fx:id="nameField" layoutX="230.0" layoutY="61.0" prefWidth="200.0" />
+        <TextField fx:id="departmentField" layoutX="230.0" layoutY="113.0" prefWidth="200.0" />
+        <TextField fx:id="positionField" layoutX="230.0" layoutY="160.0" prefWidth="200.0" />
+        <Button layoutX="89.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleAddEmployee" text="新增" />
+        <Button layoutX="150.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleSaveEmployee" text="保存" />
+        <Button layoutX="210.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleDeleteEmployee" text="删除" />
+        <Button layoutX="267.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleSaveToFile" text="保存至文件" />
+    </children>
+</AnchorPane>

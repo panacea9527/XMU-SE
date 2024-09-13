@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dialog.DialogController">
+    <Button fx:id="showDialogButton" text="点击展示不同的对话框" onAction="#onShowDialogButtonClick"/>
+</VBox>

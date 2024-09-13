@@ -1,0 +1,29 @@
+.radio-button .radio{
+    -fx-background-color: #808a39;
+    -fx-background-insets: 0;
+}
+
+.radio-button:selected .dot{
+    -fx-background-color: #000;
+    -fx-background-insets: 0;
+}
+
+.check-box .box{
+    -fx-background-color: #808a39;
+    -fx-background-insets: 0;
+}
+
+.check-box:selected .mark{
+    -fx-background-color: #000;
+    -fx-background-insets: 0;
+}
+
+.slider .track{
+    -fx-background-color: #808a39;
+    -fx-background-insets: 0;
+}
+
+.slider .thumb{
+    -fx-background-color: #939e4f;
+    -fx-background-insets: 0;
+}

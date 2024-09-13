@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+<student>
+<id>1</id>
+<name>John Doe</name>
+<phone>1234567890</phone>
+<email>john@example.com</email>
+</student>
+<student>
+<id>2</id>
+<name>Jane Smith</name>
+<phone>0987654321</phone>
+<email>jane@example.com</email>
+</student>
+</students>

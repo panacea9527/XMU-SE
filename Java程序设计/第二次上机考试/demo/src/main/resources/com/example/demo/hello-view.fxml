@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.EmployeeController">
+    <children>
+        <ListView fx:id="employeeListView" layoutX="10.0" layoutY="14.0" prefHeight="350.0" prefWidth="150.0" />
+        <Label layoutX="170.0" layoutY="14.0" text="ID：" />
+        <Label layoutX="170.0" layoutY="54.0" text="姓名：" />
+        <Label layoutX="170.0" layoutY="94.0" text="部门：" />
+        <Label layoutX="170.0" layoutY="134.0" text="岗位级别：" />
+        <TextField fx:id="idField" layoutX="230.0" layoutY="10.0" prefWidth="200.0" />
+        <TextField fx:id="nameField" layoutX="230.0" layoutY="50.0" prefWidth="200.0" />
+        <TextField fx:id="departmentField" layoutX="230.0" layoutY="90.0" prefWidth="200.0" />
+        <TextField fx:id="positionField" layoutX="230.0" layoutY="130.0" prefWidth="200.0" />
+        <Button layoutX="230.0" layoutY="170.0" mnemonicParsing="false" onAction="#handleAddEmployee" text="新增" />
+        <Button layoutX="290.0" layoutY="170.0" mnemonicParsing="false" onAction="#handleSaveEmployee" text="保存" />
+        <Button layoutX="350.0" layoutY="170.0" mnemonicParsing="false" onAction="#handleDeleteEmployee" text="删除" />
+        <Button layoutX="230.0" layoutY="210.0" mnemonicParsing="false" onAction="#handleSaveToFile" text="保存至文件" />
+    </children>
+</AnchorPane>

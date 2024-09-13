@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.painter.PainterController">
+    <left>
+        <VBox maxHeight="1.7976931348623157E308" spacing="8.0" BorderPane.alignment="CENTER">
+            <children>
+                <TitledPane text="Shape">
+                    <content>
+                        <VBox prefHeight="150.0" prefWidth="146.0" spacing="8.0">
+                            <children>
+                                <RadioButton fx:id="penRadioButton" mnemonicParsing="false" onAction="#setShapeChoice" selected="true" text="Pen">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="shapeToggleGroup" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton fx:id="circleRadioButton" mnemonicParsing="false" onAction="#setShapeChoice" text="Circle" toggleGroup="$shapeToggleGroup" />
+                                <RadioButton fx:id="rectangleRadioButton" mnemonicParsing="false" onAction="#setShapeChoice" text="Rectangle" toggleGroup="$shapeToggleGroup" />
+                                <RadioButton fx:id="lineRadioButton" mnemonicParsing="false" onAction="#setShapeChoice" text="Line" toggleGroup="$shapeToggleGroup" />
+                                <Separator prefWidth="200.0" />
+                                <RadioButton fx:id="eraserRadioButton" mnemonicParsing="false" onAction="#setShapeChoice" text="Eraser" toggleGroup="$shapeToggleGroup" />
+                            </children>
+                        </VBox>
+                    </content>
+                </TitledPane>
+                <TitledPane prefHeight="135.0" prefWidth="148.0" text="Pen Size">
+                    <content>
+                        <VBox prefHeight="126.0" prefWidth="146.0" spacing="8.0">
+                            <children>
+                                <RadioButton fx:id="smallRadioButton" mnemonicParsing="false" onAction="#sizeRadioButtonSelected" text="Small">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="sizeToggleGroup" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton fx:id="mediumRadioButton" mnemonicParsing="false" onAction="#sizeRadioButtonSelected" selected="true" text="Medium" toggleGroup="$sizeToggleGroup" />
+                                <RadioButton fx:id="largeRadioButton" mnemonicParsing="false" onAction="#sizeRadioButtonSelected" text="Large" toggleGroup="$sizeToggleGroup" />
+                            </children>
+                        </VBox>
+                    </content>
+                </TitledPane>
+                <Button fx:id="chooseColorButton" mnemonicParsing="false" onAction="#chooseColorButtonPressed" prefHeight="30.0" prefWidth="148.0" text="Choose Color" />
+                <HBox alignment="CENTER" prefHeight="32.0" prefWidth="94.0">
+                    <children>
+                        <Label text="Color：" />
+                        <Label fx:id="colorLabel" text="Black" />
+                    </children>
+                </HBox>
+                <Button fx:id="undoButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#undoButtonPressed" text="Undo" />
+                <Button fx:id="clearButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clearButtonPressed" text="Clear" />
+            </children>
+            <BorderPane.margin>
+                <Insets right="8.0" />
+            </BorderPane.margin>
+        </VBox>
+    </left>
+    <center>
+        <Pane fx:id="drawingAreaPane" maxHeight="480.0" maxWidth="480.0" onMouseDragged="#drawingMouseDragged" onMousePressed="#drawingWhenMousePressed" onMouseReleased="#drawingWhenMouseReleased" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
+    </center>
+    <padding>
+        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+    </padding>
+</BorderPane>
