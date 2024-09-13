@@ -1,0 +1,18 @@
+import("//kernel/liteos_a/liteos.gni")
+
+module_switch = defined(LOSCFG_KERNEL_SYSCALL)
+module_name = get_path_info(rebase_path("."), "name")
+kernel_module(module_name) {
+  sources = [
+    "fs_syscall.c",
+   "los_syscall.c", 
+        "net_syscall.c",   
+  "syscall_demo.c",  
+ "time_syscall.c",
+"ipc_syscall.c",  
+"misc_syscall.c", 
+ "process_syscall.c", 
+"vm_syscall.c",
+    "syscall_demo.c"
+  ]
+}
